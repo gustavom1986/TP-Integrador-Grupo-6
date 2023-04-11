@@ -14,6 +14,17 @@ private String equipo1;
 private String equipo2;
 private int golesEquipo1;
 private int golesEquipo2;
+private Resultados.ResultadosEnum resultado;
+
+    public Partidos(String codigo, String equipo1, String equipo2, int golesEquipo1, int golesEquipo2) {
+        this.codigo = codigo;
+        this.equipo1 = equipo1;
+        this.equipo2 = equipo2;
+        this.golesEquipo1 = golesEquipo1;
+        this.golesEquipo2 = golesEquipo2;
+        this.resultado = decidirResultado(golesEquipo1, golesEquipo2);
+    }
+
 
     public String getCodigo() {
         return codigo;
@@ -39,6 +50,11 @@ private int golesEquipo2;
         this.equipo2 = equipo2;
     }
 
+    public Resultados.ResultadosEnum getResultado() {
+        return resultado;
+    }
+
+    
     public int getGolesEquipo1() {
         return golesEquipo1;
     }

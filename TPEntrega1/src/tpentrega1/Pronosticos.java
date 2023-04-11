@@ -13,6 +13,11 @@ private String codigo;
 private Resultados.ResultadosEnum resultado;
 private int puntos;
 
+    public Pronosticos(String codigo, Resultados.ResultadosEnum resultado) {
+        this.codigo = codigo;
+        this.resultado = resultado;
+    }
+
     public String getCodigo() {
         return codigo;
     }
@@ -37,8 +42,8 @@ private int puntos;
     
 public void calculaPuntosPronostico (Resultados.ResultadosEnum pronostico, Resultados.ResultadosEnum real) {
 if (pronostico == real) {
-  puntos = 1;  }
-else { puntos = 0;}
+  this.puntos = 1;  }
+else { this.puntos = 0;}
 }
 
 }        
