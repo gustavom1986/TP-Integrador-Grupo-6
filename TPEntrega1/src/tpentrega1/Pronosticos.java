@@ -9,9 +9,10 @@ package tpentrega1;
  * @author grupo6
  */
 class Pronosticos {
-private Partidos partido;
-private String codigo;
-private Resultados resultado;
+
+    private Partidos partido;
+    private String codigo;
+    private Resultados resultado;
 
     public Partidos getPartido() {
         return partido;
@@ -36,10 +37,5 @@ private Resultados resultado;
     public void setResultado(Resultados resultado) {
         this.resultado = resultado;
     }
-
-
-
-
-
 
 }

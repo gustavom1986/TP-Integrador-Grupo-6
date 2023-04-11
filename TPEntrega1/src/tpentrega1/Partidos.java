@@ -9,11 +9,12 @@ package tpentrega1;
  * @author grupo6
  */
 class Partidos {
-private String codigo;
-private String equipo1;
-private String equipo2;
-private int golesEquipo1;
-private int golesEquipo2;
+
+    private String codigo;
+    private String equipo1;
+    private String equipo2;
+    private int golesEquipo1;
+    private int golesEquipo2;
 
     public String getCodigo() {
         return codigo;
@@ -54,7 +55,5 @@ private int golesEquipo2;
     public void setGolesEquipo2(int golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
-
-
 
 }
