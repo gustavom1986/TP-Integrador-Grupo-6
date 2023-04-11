@@ -9,9 +9,10 @@ package tpentrega1;
  * @author grupo6
  */
 class Equipos {
-private String nombre;
 
-     String getNombre() {
+    private String nombre;
+
+    String getNombre() {
         return nombre;
     }
 
@@ -19,12 +20,4 @@ private String nombre;
         this.nombre = nombre;
     }
 
-
-
-
-
-
-
 }
-
-
