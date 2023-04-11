@@ -54,7 +54,14 @@ private int golesEquipo2;
     public void setGolesEquipo2(int golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
-
-
-
-}
+ public Resultados.ResultadosEnum decidirResultado (int golesA, int golesB) {
+  Resultados.ResultadosEnum resultados;
+     if (golesA > golesB) {
+     resultados = Resultados.ResultadosEnum.GANA_EQUIPO_1;}
+     else if (golesA == golesB) {
+     resultados = Resultados.ResultadosEnum.EMPATE; }
+     else  {
+             resultados = Resultados.ResultadosEnum.GANA_EQUIPO_2;}
+    return resultados;
+  }
+ } 

@@ -9,17 +9,9 @@ package tpentrega1;
  * @author grupo6
  */
 class Pronosticos {
-private Partidos partido;
 private String codigo;
-private Resultados resultado;
-
-    public Partidos getPartido() {
-        return partido;
-    }
-
-    public void setPartido(Partidos partido) {
-        this.partido = partido;
-    }
+private Resultados.ResultadosEnum resultado;
+private int puntos;
 
     public String getCodigo() {
         return codigo;
@@ -29,17 +21,26 @@ private Resultados resultado;
         this.codigo = codigo;
     }
 
-    public Resultados getResultado() {
+    public Resultados.ResultadosEnum getResultado() {
         return resultado;
     }
 
-    public void setResultado(Resultados resultado) {
+    public void setResultado(Resultados.ResultadosEnum resultado) {
         this.resultado = resultado;
     }
 
+    public int getPuntos() {
+        return puntos;
+    }
 
 
-
-
-
+    
+public void calculaPuntosPronostico (Resultados.ResultadosEnum pronostico, Resultados.ResultadosEnum real) {
+if (pronostico == real) {
+  puntos = 1;  }
+else { puntos = 0;}
 }
+
+}        
+    
+

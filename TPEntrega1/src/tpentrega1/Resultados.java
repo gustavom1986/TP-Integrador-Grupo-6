@@ -9,10 +9,10 @@ package tpentrega1;
  * @author grupo6
  */
 class Resultados {
-private enum ResultadosEnum {
-    GanaEquipo1,
-    Empate, 
-    GanaEquipo2; 
+public enum ResultadosEnum {
+    GANA_EQUIPO_1,
+    EMPATE, 
+    GANA_EQUIPO_2; 
 }
 
 }
